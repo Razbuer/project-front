@@ -46,6 +46,7 @@ body {
 }
 
 .mainWrapper {
+    margin: 10px 30px;
 }
 
 a {
@@ -57,10 +58,15 @@ a {
 
 h1 {
     margin: 20px 5px;
+    font-size: 26px;
+}
+
+h2 {
+    margin: 20px 5px;
     font-size: 20px;
 }
 
-select {
+select.countUsersOnPage {
     padding: 5px 10px;
     margin: 10px;
 }
@@ -86,6 +92,7 @@ table tbody td {
     padding: 10px 15px;
     font-size: 14px;
     vertical-align: top;
+    line-height: 30px;
 }
 table thead tr th:first-child, table tbody tr td:first-child {
     border-left: none;
@@ -96,11 +103,16 @@ table thead tr th:last-child, table tbody tr td:last-child {
 table tbody tr:nth-child(even){
     background: #f3f3f3;
 }
+table img {
+    width: 25px;
+    margin: 0 auto;
+    display: block;
+}
 
 ul.pagination {
     display: inline-block;
     padding: 0;
-    margin: 0;
+    margin: 0 auto 10px;
 }
 
 ul.pagination li {display: inline;}
@@ -119,4 +131,20 @@ ul.pagination li a.active {
 }
 ul.pagination li a:hover:not(.active) {
     background-color: #ddd;
+}
+
+.createNewAccount div * {
+    width: 150px;
+}
+
+.createNewAccount label {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.createNewAccount button {
+    margin: 25px 50px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
 }

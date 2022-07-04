@@ -28,6 +28,8 @@
                     <th>Level</th>
                     <th>Birthday</th>
                     <th>Banned</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,6 +39,62 @@
         <ul class="pagination">
 
         </ul>
+
+        <hr/>
+
+        <form class="createNewAccount">
+            <h2>Create new account:</h2>
+            <div class="userName">
+                <label>Name: </label>
+                <input type="text" min="1" max="12" />
+            </div>
+            <div class="userTitle">
+                <label>Title: </label>
+                <input type="text" min="1" max="30" />
+            </div>
+            <div class="userRace">
+                <label>Race: </label>
+                <select>
+                    <option>HUMAN</option>
+                    <option>DWARF</option>
+                    <option>ELF</option>
+                    <option>GIANT</option>
+                    <option>ORC</option>
+                    <option>TROLL</option>
+                    <option>HOBBIT</option>
+                </select>
+            </div>
+            <div class="userProfession">
+                <label>Profession: </label>
+                <select>
+                    <option>WARRIOR</option>
+                    <option>ROGUE</option>
+                    <option>SORCERER</option>
+                    <option>CLERIC</option>
+                    <option>PALADIN</option>
+                    <option>NAZGUL</option>
+                    <option>WARLOCK</option>
+                    <option>DRUID</option>
+                </select>
+            </div>
+            <div class="userLevel">
+                <label>Level: </label>
+                <input type="number" min="0" max="100" />
+            </div>
+            <div class="userBirthday">
+                <label>Birthday: </label>
+                <input type="date" min="1900-01-01" max="2020-01-01"/>
+            </div>
+            <div class="userBanned">
+                <label>Banned: </label>
+                <select>
+                    <option>true</option>
+                    <option>false</option>
+                </select>
+            </div>
+            <button type="button" onclick="createUser()">Save</button>
+            <button type="reset" class="resetButton">Reset</button>
+        </form>
     </div>
 </body>
 </html>
